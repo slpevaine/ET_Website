@@ -43,7 +43,7 @@ export default function Home() {
 
             {/* Bio — starts after name finishes (2 words × 120 ms + 850 ms ≈ 1090 ms) */}
             <BlurText
-              text="UI/UX and product designer crafting digital experiences, sharing design and UGC, and exploring digital storytelling."
+              text="UI/UX and Product Designer · Final-year IT Student · Technical background in digital product development"
               tag="p"
               className="hero-bio"
               wordDelay={55}
@@ -88,6 +88,33 @@ export default function Home() {
                 </svg>
               </a>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SKILLS */}
+      <section id="skills" className="skills-section" aria-label="Skills">
+        <div className="skills-card">
+          <p className="skills-title">Familiar With</p>
+          <div className="skills-grid">
+            <span className="skill-pill">Python</span>
+            <span className="skill-pill">C</span>
+            <span className="skill-pill">Unix</span>
+            <span className="skill-pill">JavaScript</span>
+            <span className="skill-pill">HTML&CSS</span>
+            <span className="skill-pill">Data Structures & Algorithms</span>
+            <span className="skill-pill">Operating & Database Systems</span>
+            <span className="skill-pill">Linux & Windows Systems</span>
+            <span className="skill-pill">Human Computer Interfaces</span>
+            <span className="skill-pill">Jira</span>
+            <span className="skill-pill">Agile/Scrum</span>
+            <span className="skill-pill">Bitbucket/Git</span>
+            <span className="skill-pill">Version Control</span>
+            <span className="skill-pill">Technical & API Documentation</span>
+            <span className="skill-pill">Matplotlib</span>
+            <span className="skill-pill">Data Analysis</span>
+            <span className="skill-pill">Pandas</span>
+            <span className="skill-pill">NumPy</span>
           </div>
         </div>
       </section>

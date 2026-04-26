@@ -9,7 +9,7 @@ const CARDS = [
     id: 'about',
     category: 'intro',
     title: 'About Me',
-    subtitle: 'Final-year IT Student · UX Engineer · Product Designer',
+    subtitle: 'Final-year IT Student · UX & Product Designer · Frontend & Systems',
     description:
       'Final-year IT student focused on UI/UX, product design, and human-centered technology. I design thoughtful digital experiences that balance usability, aesthetics, and impact.',
     accent: '#8fad88',
@@ -25,7 +25,7 @@ const CARDS = [
     title: "Let's Connect",
     subtitle: 'Evangeline Tanoto',
     description:
-      "I'd love to collaborate on thoughtful digital experiences. Find me on any of the platforms below.",
+      "I’d love to collaborate on thoughtful digital work. Let me know if that could be useful for your team!",
     accent: '#b0a0c8',
     accentBg: 'rgba(176,160,200,0.12)',
     tags: [],
@@ -53,10 +53,11 @@ const CARDS = [
   {
     id: 'cookbookie',
     category: 'project',
-    title: 'Cookbookie',
+    title: 'Cookbookie App',
     subtitle: 'Recipe App · 2024',
     description:
-      'Social recipe app for young cooks with cross-generational sharing, simple UX flows, and personalised recommendations.',
+      'Designed Cookbookie with Figma, a recipe app tailored for young cooks, focused on simplicity and accessibility. Built features for searching, saving, and creating recipes, with an emphasis on intuitive UI/UX for less experienced users. Through this project, I developed skills in user-centered design, accessibility, and feature planning, while also exploring how technology can bridge generational gaps by enabling the sharing of recipes and food traditions across age groups.',
+    link: { label: 'Read More', href: 'https://www.linkedin.com/in/evangeline-tanoto/details/projects/' },
     accent: '#8ab4c8',
     accentBg: 'rgba(138,180,200,0.12)',
     tags: [{ label: 'Project', variant: 'project' }],
@@ -67,10 +68,17 @@ const CARDS = [
   {
     id: 'emotion',
     category: 'project',
-    title: 'Emotion Recognition',
-    subtitle: 'ML System · 2026 – Present',
+    title: 'Sentiment Guide for Autistic Adolescents',
+    subtitle: 'ML Project · Dec 2025 – Present',
     description:
-      'Machine learning system detecting emotional risk levels using audio/visual data, designed with real user research involving neurodivergent children.',
+      'A student research project explored how autistic adolescents (and people in general), can interact with machines in a natural and intuitive way. The initial focus is on children who struggle to pick up social cues, and how technology might help them navigate social interactions more confidently.',
+    bullets: [
+      'Real-time tone analysis using a locally-run AI model (Gemma3:4b via Ollama)',
+      'Flags unkind or blunt phrasing with inline word-level highlights, Grammarly-style',
+      'Generates contextual suggestions for kinder alternatives using prompt engineering',
+      'Fully private — no data leaves the device, no API key, no rate limits',
+      'Vanilla JavaScript, Shadow DOM, Chrome Extensions API, Range API',
+    ],
     accent: '#c4848c',
     accentBg: 'rgba(196,132,140,0.12)',
     tags: [{ label: 'Project', variant: 'project' }],
@@ -84,7 +92,8 @@ const CARDS = [
     title: 'WA Health Hackathon',
     subtitle: 'Hackathon · 2025',
     description:
-      'Built an offline triage web app classifying radiology reports into GP vs specialist pathways.',
+      'Developed a rule-based triage web app during a 3-day hackathon to help identify and manage patients at risk of micro-fractures. Built a math-based algorithm using clinician-approved rules (avoiding LLMs for reliability) and designed a minimal, workflow-friendly interface that integrates patient data for clear triage outcomes. Through this project, I strengthened skills in user-centered design for healthcare, prioritizing simplicity over feature overload, and gained insight into clinical workflows, real-world constraints, and the value of iterative feedback from medical professionals.',
+    link: { label: 'Read More', href: 'https://www.linkedin.com/posts/evangeline-tanoto_working-alongside-doctors-and-fellow-innovators-activity-7376914673117491201-ETOF?utm_source=share&utm_medium=member_desktop&rcm=ACoAADf1e9wBE-jqb3rq04cYIVDMdd3ZnSbQ6lA' },
     accent: '#7ba8c0',
     accentBg: 'rgba(123,168,192,0.12)',
     tags: [{ label: 'Hackathon', variant: 'hackathon' }],
@@ -98,7 +107,8 @@ const CARDS = [
     title: 'EcoPulse Hackathon',
     subtitle: 'Hackathon · 2025',
     description:
-      'Designed and built a sustainability-focused solution addressing environmental challenges through data-driven insights and community engagement.',
+      'Developed a microgrid monitoring solution that evolved from a standard dashboard into a smart alert system, incorporating anomaly detection to deliver real-time email and SMS notifications for operational issues. Built features to visualize energy data and system health while providing actionable insights for both operators and stakeholders. Through this project, I gained experience applying AI to real-world data, translating complex systems into usable insights, and strengthening my ability to communicate technical solutions effectively through pitching and storytelling.',
+    link: { label: 'Read More', href: 'https://www.linkedin.com/posts/evangeline-tanoto_exciting-news-our-team-won-runner-up-for-activity-7380106012952948737-FKKW?utm_source=share&utm_medium=member_desktop&rcm=ACoAADf1e9wBE-jqb3rq04cYIVDMdd3ZnSbQ6lA' },
     accent: '#7cad88',
     accentBg: 'rgba(124,173,136,0.12)',
     tags: [{ label: 'Hackathon', variant: 'hackathon' }],
@@ -112,7 +122,8 @@ const CARDS = [
     title: 'VisagioX Hackathon 2026',
     subtitle: 'Hackathon · 2026',
     description:
-      'Competed in VisagioX Hackathon 2026, developing innovative solutions under time pressure.',
+      'Built an eye-tracking attention monitoring system at a 3-day hackathon hosted by Visagio. The project addressed the challenge of human oversight in autonomous systems, where operator attention and expertise levels (novice, expert, fatigue states) impact performance but are not accounted for in current tools. Developed a prototype attention tracker to help detect when operator focus is diverted, supporting more adaptive and human-aware system supervision. Gained experience in human–AI interaction design, problem framing in complex systems, and rapid prototyping under time constraints.',
+    link: { label: 'Read More', href: 'https://www.linkedin.com/posts/evangeline-tanoto_competing-in-visagiox-hackathon-2026-activity-7383297354844416000-XXYV?utm_source=share&utm_medium=member_desktop&rcm=ACoAADf1e9wBE-jqb3rq04cYIVDMdd3ZnSbQ6lA' },
     accent: '#c09878',
     accentBg: 'rgba(192,152,120,0.12)',
     tags: [{ label: 'Hackathon', variant: 'hackathon' }],
@@ -126,7 +137,8 @@ const CARDS = [
     title: 'Student StartUp Weekend 2026',
     subtitle: 'Hackathon · 2026',
     description:
-      'Participated in Student StartUp Weekend 2026, pitching and prototyping a startup idea from concept to demo in 54 hours.',
+      'Built HeyMom in a 52-hour hackathon—an action-oriented productivity tool inspired by the idea of an “AI mum” for student accountability. After interviewing Year 11 students and iterating based on feedback, we pivoted the concept into a validated solution focused on motivation and task completion. Gained experience in rapid prototyping, user interviewing, and iterating ideas based on real user insights.',
+    link: { label: 'Read More', href: 'https://www.linkedin.com/posts/evangeline-tanoto_studentstartupweekend-curtinentrepreneurs-activity-7445335095500054528-NR6_?utm_source=share&utm_medium=member_desktop&rcm=ACoAADf1e9wBE-jqb3rq04cYIVDMdd3ZnSbQ6lA' },
     accent: '#a888c4',
     accentBg: 'rgba(168,136,196,0.12)',
     tags: [{ label: 'Hackathon', variant: 'hackathon' }],
@@ -140,7 +152,8 @@ const CARDS = [
     title: 'Perth Hackerhouse 2026',
     subtitle: 'Hackathon · 2026',
     description:
-      'Joined Perth Hackerhouse 2026, collaborating with builders and designers to ship projects in an immersive hacker environment.',
+      'Selected to attend Perth HackerHouse—Perth’s first hackerhouse—hosted by Arrayah, where I lived and collaborated with 14 creators to build meaningful projects. Delivered a workshop on building in public, sharing how I created social media content reaching 3.1M views. Gained experience in rapid ideation, community-driven building, and learning from diverse perspectives in an intensive, collaborative environment.',
+    link: { label: 'Read More', href: 'https://www.linkedin.com/posts/evangeline-tanoto_day-1-chapter-1-people-and-perspectives-activity-7421507198624915456-fCUd?utm_source=share&utm_medium=member_desktop&rcm=ACoAADf1e9wBE-jqb3rq04cYIVDMdd3ZnSbQ6lA' },
     accent: '#88b4c0',
     accentBg: 'rgba(136,180,192,0.12)',
     tags: [{ label: 'Hackathon', variant: 'hackathon' }],
@@ -154,7 +167,8 @@ const CARDS = [
     title: 'CROC & URC Hackathon 2025',
     subtitle: 'Hackathon · 2025',
     description:
-      'Competed in the CROC & URC Hackathon 2025, building a tech solution for a real-world challenge posed by industry partners.',
+      'Participated in the 2-day CROC & URC Hackathon 2025, building a robot car to navigate an obstacle course and collect points. Worked with Arduino and C-based code to develop control systems, pivoting from a failed radio joystick setup to a Bluetooth mobile controller. Gained hands-on experience in rapid prototyping, hardware troubleshooting, and adapting under time pressure, while strengthening teamwork, communication, and the ability to apply transferable coding skills across platforms.',
+    link: { label: 'Read More', href: 'https://www.linkedin.com/posts/evangeline-tanoto_another-month-another-hackathon-this-time-activity-7371837465994854400-TVMZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAADf1e9wBE-jqb3rq04cYIVDMdd3ZnSbQ6lA'},
     accent: '#c4a870',
     accentBg: 'rgba(196,168,112,0.12)',
     tags: [{ label: 'Hackathon', variant: 'hackathon' }],
@@ -168,7 +182,8 @@ const CARDS = [
     title: 'Bloom Launchpad Program',
     subtitle: 'Internship · 2025',
     description:
-      'Selected for the Bloom Launchpad Program, gaining hands-on industry experience and mentorship in product and design.',
+      'Selected for the 12-week Bloom Launchpad entrepreneurship program, where I learned how to take a business from idea to execution in a structured, fast-paced environment. During the program, I started a social media services business, made 50+ customer interviews to understand real needs, and generated $500+ in early revenue. The experience taught me how to validate ideas through direct conversations, adapt based on feedback, and build something real from scratch rather than just theorising about it.',
+    link: { label: 'Read More', href: 'https://www.linkedin.com/posts/evangeline-tanoto_launchpad-bloomwa-studentfounders-share-7432269122673205248-s8hk?utm_source=share&utm_medium=member_desktop&rcm=ACoAADf1e9wBE-jqb3rq04cYIVDMdd3ZnSbQ6lA'},
     accent: '#e8a0a8',
     accentBg: 'rgba(232,160,168,0.12)',
     tags: [{ label: 'Internship', variant: 'internship' }],
@@ -197,6 +212,7 @@ const CARDS = [
     subtitle: 'CoderDojo · Volunteering',
     description:
       'Mentored young students at CoderDojo, guiding them through coding projects and fostering a passion for technology.',
+    link: { label: 'Read More', href: 'https://www.facebook.com/CoderDojoWA/'},
     accent: '#b4c890',
     accentBg: 'rgba(180,200,144,0.12)',
     tags: [{ label: 'Volunteering', variant: 'volunteering' }],
@@ -211,6 +227,7 @@ const CARDS = [
     subtitle: 'AI Summit · Volunteering',
     description:
       'Volunteered at the AI Summit, supporting event operations and connecting attendees with speakers and exhibitors.',
+    link: { label: 'Read More', href: 'https://www.linkedin.com/posts/evangeline-tanoto_jimowensphotography-aidisrupt2025-activity-7406997453612232704-m4mT?utm_source=share&utm_medium=member_desktop&rcm=ACoAADf1e9wBE-jqb3rq04cYIVDMdd3ZnSbQ6lA'},
     accent: '#b0b8d8',
     accentBg: 'rgba(176,184,216,0.12)',
     tags: [{ label: 'Volunteering', variant: 'volunteering' }],
@@ -280,8 +297,12 @@ function buildCard(card) {
     </div>
     <h2 class="cb-title">${card.title}</h2>
     <p class="cb-subtitle">${card.subtitle}</p>
-    <p class="cb-desc">${card.description}</p>
-    ${socialsHtml}
+    <div class="cb-scroll-area">
+      <p class="cb-desc">${card.description}</p>
+      ${card.bullets ? `<ul class="cb-bullets">${card.bullets.map(b => `<li>${b}</li>`).join('')}</ul>` : ''}
+      ${card.link ? `<a href="${card.link.href}" class="cb-project-link" target="_blank" rel="noopener">${card.link.label}</a>` : ''}
+      ${socialsHtml}
+    </div>
     <button class="cb-back-btn js-flip-back" aria-label="Flip back">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
            stroke-linecap="round" stroke-linejoin="round">
@@ -302,8 +323,10 @@ function buildCard(card) {
       wrap.classList.remove('flipped');
       return;
     }
-    /* Social links: let them open, don't flip */
+    /* Social/project links and scrollable description: don't flip */
     if (e.target.closest('.cb-social-link')) return;
+    if (e.target.closest('.cb-project-link')) return;
+    if (e.target.closest('.cb-scroll-area')) return;
 
     wrap.classList.toggle('flipped');
   });
@@ -320,49 +343,6 @@ function buildCard(card) {
   });
 
   return wrap;
-}
-
-/* ── Interactive gooey blobs (follow cursor) ─────────────────── */
-function initGooeyBlobs() {
-  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-
-  const configs = [
-    { sel: '.blob-1', speed: 0.035, ox:   0, oy:   0 },
-    { sel: '.blob-2', speed: 0.060, ox:  70, oy:  40 },
-    { sel: '.blob-3', speed: 0.020, ox: -55, oy:  65 },
-  ];
-
-  const blobs = configs.map(c => {
-    const el = document.querySelector(c.sel);
-    if (!el) return null;
-    el.style.animation = 'none';
-    const r  = el.getBoundingClientRect();
-    const hx = r.left + r.width  / 2;
-    const hy = r.top  + r.height / 2;
-    return { el, speed: c.speed, ox: c.ox, oy: c.oy, x: hx, y: hy, hx, hy };
-  }).filter(Boolean);
-
-  if (!blobs.length) return;
-
-  let mx = window.innerWidth  / 2;
-  let my = window.innerHeight / 2;
-
-  window.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; }, { passive: true });
-  window.addEventListener('touchmove', e => {
-    mx = e.touches[0].clientX;
-    my = e.touches[0].clientY;
-  }, { passive: true });
-
-  const lerp = (a, b, t) => a + (b - a) * t;
-
-  (function tick() {
-    blobs.forEach(b => {
-      b.x = lerp(b.x, mx + b.ox, b.speed);
-      b.y = lerp(b.y, my + b.oy, b.speed);
-      b.el.style.transform = `translate(${b.x - b.hx}px, ${b.y - b.hy}px)`;
-    });
-    requestAnimationFrame(tick);
-  })();
 }
 
 /* ── Nav scroll tint ─────────────────────────────────────────── */
@@ -400,8 +380,7 @@ function initCards() {
 /* Works whether DOMContentLoaded has already fired (Next.js afterInteractive)
    or hasn't yet (plain HTML <script> at end of body). */
 if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', () => { initCards(); initGooeyBlobs(); });
+  document.addEventListener('DOMContentLoaded', () => { initCards(); });
 } else {
   initCards();
-  initGooeyBlobs();
 }
