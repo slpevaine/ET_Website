@@ -1,18 +1,27 @@
 import type { Metadata, Viewport } from "next";
-import { Josefin_Sans } from "next/font/google";
+import { Cormorant_Garamond, Inter } from "next/font/google";
 import "./globals.css";
+import SiteNav from "@/components/SiteNav";
 
-const josefinSans = Josefin_Sans({
+const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
   display: "swap",
-  weight: ["300", "400", "600", "700"],
-  variable: "--font-josefin",
+  weight: ["300", "400", "500", "600", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-cormorant",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["300", "400", "500", "600"],
+  variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
   title: "Evangeline Tanoto — Portfolio",
   description:
-    "UI/UX and product designer crafting digital experiences, sharing design and UGC, and exploring digital storytelling.",
+    "UI/UX and Product Designer crafting thoughtful, human-centered digital experiences.",
 };
 
 export const viewport: Viewport = {
@@ -26,8 +35,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={josefinSans.variable}>
-      <body className={josefinSans.className}>{children}</body>
+    <html lang="en" className={`${cormorant.variable} ${inter.variable}`}>
+      <body className={inter.className}>
+        <SiteNav />
+        <main>{children}</main>
+      </body>
     </html>
   );
 }

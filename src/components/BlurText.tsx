@@ -10,6 +10,7 @@ interface BlurTextProps {
   startDelay?: number;  // ms before the first word begins
   duration?: number;    // seconds per word transition
   tag?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span';
+  align?: 'left' | 'center' | 'right';
 }
 
 export default function BlurText({
@@ -19,6 +20,7 @@ export default function BlurText({
   startDelay = 0,
   duration = 0.75,
   tag = 'p',
+  align = 'left',
 }: BlurTextProps) {
   const ref = useRef<HTMLElement>(null);
   const isInView = useInView(ref as React.RefObject<Element>, { once: true, margin: '0px 0px -40px 0px' });
@@ -31,7 +33,7 @@ export default function BlurText({
     <Tag
       ref={ref as React.RefObject<HTMLHeadingElement & HTMLParagraphElement>}
       className={className}
-      style={{ textAlign: 'center' }}
+      style={{ textAlign: align }}
     >
       {words.map((word, i) => (
         <motion.span
