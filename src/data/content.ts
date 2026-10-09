@@ -1,8 +1,8 @@
 export const ABOUT = {
   name: "Evangeline Tanoto",
-  role: "IT Graduate",
-  tagline: "Product Design · Project Management · Software Engineering — exploring where they overlap",
-  bio: "Recently graduated with a degree in IT, and currently working as an AI & Front-End Engineer Intern at Valearnis, an edtech startup. Still figuring out exactly where I fit best — so I’m building transferable skills across product design, project management, and software engineering along the way.",
+  role: "Information Technology Graduate",
+  tagline: "UX & Product Design · Project Management · Software Engineering — designing for people, end to end",
+  bio: "Recently graduated with a degree in Information Technology, and currently working as an AI & Front-End Engineer Intern at Valearnis, an edtech startup. Across design, project management, and engineering, the common thread in my work is starting from real users: talking to them, testing ideas early, and turning what I learn into products that are simple to use. Because I write code myself, I’m especially at home designing technical, information-dense tools and working side by side with engineers.",
   portrait: "/assets/graduation.jpg",
   resume: "/assets/Evangeline-Tanoto-Resume.docx",
 };
@@ -15,12 +15,12 @@ export const SOCIALS = [
 
 export const SKILL_GROUPS = [
   {
-    label: "Product Design",
-    items: ["Figma", "UI/UX Design", "Prototyping", "User Research", "Accessibility"],
+    label: "UX & Product Design",
+    items: ["Figma", "UI/UX Design", "User Research", "User Interviews", "Wireframing & Prototyping", "Information Design", "Accessibility"],
   },
   {
     label: "Engineering",
-    items: ["Python", "TypeScript", "JavaScript", "HTML & CSS", "Git & GitHub", "Docker", "MongoDB", "REST APIs"],
+    items: ["Python", "TypeScript", "JavaScript", "HTML & CSS", "Git & GitHub", "Docker", "MongoDB", "REST APIs", "API Documentation"],
   },
   {
     label: "Product & Leadership",
@@ -45,7 +45,7 @@ export const EXPERIENCE: ExperienceItem[] = [
     period: "Jun 2026 – Present",
     current: true,
     description:
-      "Building and shipping front-end features for a major upgrade to the platform’s learning journey, including UI layout decisions and learning first-hand how design choices trade off against technical constraints. Connecting frontend and backend systems end-to-end, coordinating changes through Git and Docker, and using AI coding tools to support writing and debugging code.",
+      "Building and shipping front-end features for a major upgrade to the platform’s learning journey for students, making UI and layout decisions and learning first-hand how design choices trade off against technical constraints. Connecting frontend and backend systems end-to-end, coordinating changes through Git and Docker, and using AI coding tools to support writing and debugging code.",
   },
   {
     id: "coderdojo-binarx",
@@ -57,7 +57,7 @@ export const EXPERIENCE: ExperienceItem[] = [
   },
   {
     id: "curtin-perth",
-    role: "IT Graduate",
+    role: "Information Technology Graduate",
     org: "Curtin University, Perth",
     period: "Jul 2025 – Sep 2026",
     description:
@@ -104,7 +104,7 @@ export const FEATURE_ITEMS: FeatureItem[] = [
     subtitle: "Healthcare Project · Oct 2025 – Aug 2026",
     starred: true,
     description:
-      "What began as a 3-day prototype at the WA Health Hackathon grew into an ongoing project: a local, rule-based triage web app that auto-processes ER radiology reports to classify minimal-trauma fracture patients into GP vs Specialist pathways. Chose a minimal, workflow-friendly design over trendy features after consulting a clinician who needed something usable without retraining. The prototype was selected for proposal at East Metropolitan Health Service Perth — I led the team’s stakeholder meetings and co-authored the technical proposal over the following year.",
+      "What began as a 3-day prototype at the WA Health Hackathon grew into an ongoing project: a local, rule-based triage web app that auto-processes ER radiology reports to classify minimal-trauma fracture patients into GP vs Specialist pathways. After consulting a clinician who needed something usable without retraining, I designed around their existing workflow and chose a minimal interface over trendy features. The prototype was selected for proposal at East Metropolitan Health Service Perth — I led the team’s stakeholder meetings and co-authored the technical proposal over the following year.",
     link: { label: "Read More", href: "https://www.linkedin.com/posts/evangeline-tanoto_working-alongside-doctors-and-fellow-innovators-activity-7376914673117491201-ETOF" },
     imageUrl: "/assets/wahealth.png",
     imageAlt: "WA Health Hackathon",
@@ -127,12 +127,28 @@ export const FEATURE_ITEMS: FeatureItem[] = [
     imageAlt: "Emotion Recognition System",
   },
   {
+    id: "project-kiosk",
+    category: "project",
+    title: "Tech Hire Kiosk User Interface",
+    subtitle: "UI/UX Design · Feb – Jun 2025",
+    description:
+      "Designed a self-service kiosk that lets students borrow, return, request, and enquire about tech equipment at any time. The interface mirrors familiar devices like smartphones and tablets, so it feels familiar from the first tap.",
+    bullets: [
+      "One-tap login with student ID cards, and every task completed in 3–5 steps",
+      "Real-time stock levels and visual previews of equipment",
+      "Multilingual support and customisable accessibility options",
+      "Integrated with 24/7 lockers, with confirmation and reminder emails to close the loop",
+    ],
+    imageUrl: "/assets/kiosk.png",
+    imageAlt: "Tech Hire Kiosk user interface",
+  },
+  {
     id: "project-trafficsim",
     category: "project",
     title: "Traffic Simulation System",
     subtitle: "University Capstone · Jan – May 2025",
     description:
-      "Built a traffic simulation system in Python, scheduling and leading meetings with our supervisor and client to keep requirements and deliverables on track. Wrote the system design docs, API specifications, ER diagrams, and architecture documentation used for handover. Achieved an overall grade of 70% (Distinction).",
+      "Built a traffic simulation system in Python, scheduling and leading meetings with our supervisor and client to keep requirements and deliverables on track. Wrote and structured the system design docs, API specifications, ER diagrams, and architecture documentation so the next team could pick up the system without us. Achieved an overall grade of 70% (Distinction).",
     imageUrl: "/assets/trafficsim.png",
     imageAlt: "Traffic Simulation System desktop application",
   },
@@ -142,7 +158,7 @@ export const FEATURE_ITEMS: FeatureItem[] = [
     title: "Cookbookie App",
     subtitle: "Recipe App · 2024",
     description:
-      "Designed Cookbookie with Figma, a recipe app tailored for young cooks, focused on simplicity and accessibility. Built features for searching, saving, and creating recipes, with an emphasis on intuitive UI/UX for less experienced users. Through this project, I developed skills in user-centered design, accessibility, and feature planning, while also exploring how technology can bridge generational gaps by enabling the sharing of recipes and food traditions across age groups.",
+      "Designed Cookbookie in Figma, a recipe app tailored for young cooks, focused on simplicity and accessibility. Designed user flows for searching, saving, and creating recipes, with an emphasis on intuitive UI/UX for less experienced users. Through this project, I developed skills in user-centered design, accessibility, and feature planning, while also exploring how technology can bridge generational gaps by enabling the sharing of recipes and food traditions across age groups.",
     link: { label: "Read More", href: "https://www.linkedin.com/in/evangeline-tanoto/details/projects/" },
     imageUrl: "/assets/cookbookie.png",
     imageAlt: "Cookbookie Recipe App",
@@ -155,7 +171,7 @@ export const FEATURE_ITEMS: FeatureItem[] = [
     title: "Student StartUp Weekend 2026",
     subtitle: "Hackathon · 2026",
     description:
-      "Built HeyMom in a 52-hour hackathon — an action-oriented productivity tool inspired by the idea of an “AI mum” for student accountability. After interviewing Year 11 students and iterating based on feedback, we pivoted the concept into a validated solution focused on motivation and task completion. Gained experience in rapid prototyping, user interviewing, and iterating ideas based on real user insights.",
+      "Built HeyMom in a 52-hour hackathon — an action-oriented productivity tool inspired by the idea of an “AI mum” for student accountability. After interviewing Year 11 students and iterating based on feedback, we pivoted the concept into a validated solution focused on motivation and task completion. Gained experience in rapid prototyping, user interviews, and turning real user insights into design decisions.",
     link: { label: "Read More", href: "https://www.linkedin.com/posts/evangeline-tanoto_studentstartupweekend-curtinentrepreneurs-activity-7445335095500054528-NR6_" },
     imageUrl: "/assets/startupweekend.jpeg",
     imageAlt: "Student StartUp Weekend 2026",
@@ -177,10 +193,16 @@ export const FEATURE_ITEMS: FeatureItem[] = [
     title: "MicroVision",
     subtitle: "Hackathon · Oct 2025",
     description:
-      "Stepped up as project lead for the EcoPulse Civic Hackers Hackathon, assigning roles based on each teammate’s strengths. Pivoted a simple microgrid-monitoring dashboard into a smart alert system with anomaly detection, delivering real-time email and SMS notifications for operational issues — then led pitch preparation and rehearsals to win 2nd place and a $2,000 prize.",
+      "Runner-up ($2,000 prize) at the EcoPulse Civic Hackers Hackathon, answering: how can we give complete visibility into how a microgrid is operating? As project lead, I assigned roles around each teammate’s strengths and led pitch preparation.",
+    bullets: [
+      "Began as a dashboard, then reframed around one question: what happens when operators aren’t at their screens?",
+      "Anomaly detection across renewable generation, storage, and demand, with email alerts for minor issues and SMS for critical ones",
+      "Dashboard showing energy breakdowns, microgrid health, and sustainability insights",
+      "Designed for two audiences: monitoring for operators, transparency for communities and investors",
+    ],
     link: { label: "Read More", href: "https://www.linkedin.com/posts/evangeline-tanoto_exciting-news-our-team-won-runner-up-for-activity-7380106012952948737-FKKW" },
-    imageUrl: "/assets/ecopulse_hackathon.jpeg",
-    imageAlt: "EcoPulse Hackathon",
+    imageUrl: "/assets/micro%20dashboard.png",
+    imageAlt: "MicroVision microgrid monitoring dashboard",
   },
   {
     id: "hackathon-wahealth",
@@ -188,7 +210,14 @@ export const FEATURE_ITEMS: FeatureItem[] = [
     title: "WA Health Hackathon",
     subtitle: "Hackathon · 2025",
     description:
-      "Developed a rule-based triage web app during a 3-day hackathon to help identify and manage patients at risk of micro-fractures. Built a math-based algorithm using clinician-approved rules, avoiding LLMs for reliability, and designed a minimal, workflow-friendly interface that integrates patient data for clear triage outcomes. Through this project, I strengthened skills in user-centered design for healthcare, prioritizing simplicity over feature overload, and gained insight into clinical workflows, real-world constraints, and the value of iterative feedback from medical professionals.",
+      "Built a rule-based triage web app in 3 days to help hospitals identify and manage patients at risk of micro-fractures, working alongside doctors throughout.",
+    bullets: [
+      "Math-based algorithm built on doctor-agreed rules, with adjustable parameters; no LLMs, so diagnoses stay accurate and trustworthy",
+      "Combines patient history, symptoms, pain scores, and injury cause into one clear triage outcome",
+      "Deliberately minimal UI (no extra colours, icons, or flashy elements) so it fits into hospital workflows",
+      "Cut nice-to-have ideas like speech-to-text to focus on usability for healthcare workers",
+      "Clinicians invited us to develop it further, which became the Osteoporosis Triage project",
+    ],
     link: { label: "Read More", href: "https://www.linkedin.com/posts/evangeline-tanoto_working-alongside-doctors-and-fellow-innovators-activity-7376914673117491201-ETOF" },
     imageUrl: "/assets/wahealth.png",
     imageAlt: "WA Health Hackathon",

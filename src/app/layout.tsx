@@ -21,7 +21,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Evangeline Tanoto — Portfolio",
   description:
-    "UI/UX and Product Designer crafting thoughtful, human-centered digital experiences.",
+    "UX and product designer with a background in engineering and project management, crafting thoughtful, human-centered digital experiences.",
 };
 
 export const viewport: Viewport = {
